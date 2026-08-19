@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="4.1">
+  <Ad id="ad2">
+    <InLine>
+      <AdSystem>Test Ad Server</AdSystem>
+      <AdTitle>Valid VPAID Ad</AdTitle>
+      <Impression>
+        <![CDATA[https://vimeshikashri.github.io/gTech-Ads/pixel/impression?campaign=summer_sale&creative=vpaid_30s]]>
+      </Impression>
+      <Creatives>
+        <Creative id="cr2" sequence="1">
+          <Linear>
+            <Duration>00:00:30</Duration>
+            <TrackingEvents>
+              <Tracking event="start">
+                <![CDATA[https://vimeshikashri.github.io/gTech-Ads/events/start?creative=vpaid_30s]]>
+              </Tracking>
+              <Tracking event="firstQuartile">
+                <![CDATA[https://vimeshikashri.github.io/gTech-Ads/events/firstQuartile?creative=vpaid_30s]]>
+              </Tracking>
+              <Tracking event="midpoint">
+                <![CDATA[https://vimeshikashri.github.io/gTech-Ads/events/midpoint?creative=vpaid_30s]]>
+              </Tracking>
+              <Tracking event="thirdQuartile">
+                <![CDATA[https://vimeshikashri.github.io/gTech-Ads/events/thirdQuartile?creative=vpaid_30s]]>
+              </Tracking>
+              <Tracking event="complete">
+                <![CDATA[https://vimeshikashri.github.io/gTech-Ads/events/complete?creative=vpaid_30s]]>
+              </Tracking>
+            </TrackingEvents>
+            <MediaFiles>
+              <!-- VPAID interactive creative -->
+              <MediaFile
+                delivery="progressive"
+                type="application/javascript"
+                apiFramework="VPAID"
+                width="1920"
+                height="1080">
+                <![CDATA[https://vimeshikashri.github.io/gTech-Ads/vpaid/c
+reative.js]]>
+              </MediaFile>
+              <!-- Fallback MP4 in case VPAID fails -->
+              <MediaFile
+                delivery="progressive"
+                type="video/mp4"
+                width="1920"
+                height="1080">
+                <![CDATA[https://vimeshikashri.github.io/gTech-Ads/creatives/summer_sale_1080p.mp4]]>
+              </MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
